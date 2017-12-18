@@ -16,15 +16,21 @@
 	overflow-y: scroll;
 	position: fixed;
 	top: 0;
-	left: -20px;
-	right: -20px;
-	padding:20px;
+	left: 0px;
+	right:-20px;
 	bottom: 0;
 	background-color:  rgba(0, 0, 0, 0.5);
 	color: #000;
 	opacity: 0;
 	z-index: -1000;
 	pointer-events: none;
+}
+.zk-modal-vscroll{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 20px;
+    bottom: 0;
 }
 .zk-modal.active{
 	pointer-events: initial;
