@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 	}
 	
 	if ($("body").hasClass("home") && $.cookie('hidepopup') != 'hide') {
-		 setTimeout(openModalNewsletter, 1000)
+		 setTimeout(openModalNewsletter, 3000)
 	}
 
 	
