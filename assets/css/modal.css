@@ -1,0 +1,129 @@
+.zk-modal,
+.zk-modal *{
+	box-sizing: border-box;
+}
+.zk-close-modal a:before,
+.closeIcon:before,
+.closeIcon:after,
+.zk-modal,
+.zk-modal-vcenter{
+	-webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.zk-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:  rgba(0, 0, 0, 0.5);
+	color: #000;
+	opacity: 0;
+	z-index: -1000;
+	pointer-events: none;
+}
+.zk-modal.active{
+	pointer-events: initial;
+	opacity: 1;
+	z-index: 99999;
+}
+.zk-modal-box{
+	position: relative;
+	max-width: 1020px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+    border-radius: 11px;
+    box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.46);
+    padding: 30px;
+    background-color: #fff;
+}
+.zk-modal img{
+	display: block;
+}
+.zk-modal-vcenter{
+	position: absolute;
+	top:50%;
+	width: 100%;
+	transform: translateY(0);
+}
+.zk-modal.active .zk-modal-vcenter{
+	transform: translateY(-50%);
+}
+
+
+/* CLOSE */
+
+
+	.zk-close-modal {
+	    display: inline-block;
+	    text-align: right;
+	    position: absolute;
+	    right: 0px;
+	    z-index: 9999;
+	    top: 0px;
+	    transform: translate(50%, -50%);
+	    cursor: pointer;
+	}
+	.zk-close-modal a{
+		width: 40px;
+		height: 40px;
+	    background-color: #000;
+		border: 1px solid #000;
+		display: block;
+		position: relative;
+		border-radius: 30px;
+	}
+	.closeIcon:before,
+	.closeIcon:after{
+		position: relative;
+		content: "";
+		background-color:#fff;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		display: block;
+	}
+	.zk-close-modal:hover .closeIcon:before,
+	.zk-close-modal:hover .closeIcon:after{
+		background-color: #000;
+	}
+	.closeIcon:before{
+		width: 20px;
+		height: 1px;
+		left: 9px;
+		top: 19px;
+	}
+	.closeIcon:after{
+		width: 1px;
+		height: 20px;
+		left: 18px;
+		top: 9px;
+	}
+	.zk-close-modal a:before{
+		display: block;
+		content:"";
+		background-color: #fff;
+		top: 50%;
+		left: 50%;
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-radius: 30px;
+	}
+	.zk-close-modal:hover a:before{
+		width: 42px;
+		height: 42px;
+		top: -1px;
+		left: -1px;
+		right: -1px;
+		bottom: -1px;
+	}
+	.zk-hidepopup{
+		text-align: center;
+		line-height: 10px;
+		padding-top: 15px;
+		color: #fff;
+	}
+	
