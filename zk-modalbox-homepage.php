@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: ZK WP MODALBOX HOMEPAGE
-Version: 0.0.1
+Version: 0.0.2
 Description: Display a modal box on the homepage
 Author: Robin Ferrari
 GitHub Plugin URI: zecka/zk-wp-modalbox-homepage
