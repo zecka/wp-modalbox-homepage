@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: ZK WP MODALBOX HOMEPAGE
-Version: 0.0.3.1
+Version: 0.0.3.2
 Description: Display a modal box on the homepage
 Author: Robin Ferrari
 GitHub Plugin URI: zecka/zk-wp-modalbox-homepage
@@ -9,7 +9,7 @@ GitHub Plugin URI: https://github.com/zecka/zk-wp-modalbox-homepage
 */
 define( 'ZKWPM_URL', substr(plugin_dir_url( __FILE__ ), 0, -1) );
 define( 'ZKWPM_PATH', substr(plugin_dir_path( __FILE__ ), 0, -1) );
-define( 'ZKWPM_VERSION', '0.0.3.1' );
+define( 'ZKWPM_VERSION', '0.0.3.2' );
 
 add_action('wp_enqueue_scripts', 'zkwpm_enqueue_scripts');
 function zkwpm_enqueue_scripts(){
@@ -23,7 +23,7 @@ function zkwpm_add_modal_to_footer(){
 	
 	$modal_header=false;
 	$modal_footer=false;
-	$modal_body='<img src="'.ZKWPM_URL.'/assets/img/voeux-2018.jpg">';
+	$modal_body='<img src="'.ZKWPM_URL.'/assets/img/voeux-2018.png">';
 	
 	if(is_front_page() || is_home()){
 	?>
